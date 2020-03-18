@@ -194,9 +194,7 @@ span {
 
 }
 .cardlink{
-  text-decoration: none;
-  
-
+  text-decoration: none!important;
 }
 .cardHolder{
   display: grid;
