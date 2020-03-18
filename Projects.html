@@ -25,13 +25,11 @@
         <a href="index.html" class="active">Home</a>
         <button class ="switcher" id="switch" onclick="toggleTheme()"><i class="far fa-moon"></i></button>
         <script>
-          // function to set a given theme/color-scheme
           function setTheme(themeName) {
               localStorage.setItem('theme', themeName);
               document.documentElement.className = themeName;
           }
   
-          // function to toggle between light and dark theme
           function toggleTheme() {
               if (localStorage.getItem('theme') === 'theme-dark') {
                   setTheme('theme-light');
@@ -40,7 +38,6 @@
               }
           }
   
-          // Immediately invoked function to set the theme on initial load
           (function () {
               if (localStorage.getItem('theme') === 'theme-dark') {
                   setTheme('theme-dark');
