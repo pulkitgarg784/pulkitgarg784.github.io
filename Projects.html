@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"charset='utf-8'>
+    <title>Pulkit Garg</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+
+    <script src="https://kit.fontawesome.com/c63635c2a4.js" crossorigin="anonymous"></script>
+    <script src = "Topnav.js"></script>
+
+
+
+
+</head>
+<body>
+  
+    <div class="animated fadeIn topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+        <a href="Projects.html">Projects</a>
+        <a href="index.html" class="active">Home</a>
+        <button class ="switcher" id="switch" onclick="toggleTheme()"><i class="far fa-moon"></i></button>
+        <script>
+          // function to set a given theme/color-scheme
+          function setTheme(themeName) {
+              localStorage.setItem('theme', themeName);
+              document.documentElement.className = themeName;
+          }
+  
+          // function to toggle between light and dark theme
+          function toggleTheme() {
+              if (localStorage.getItem('theme') === 'theme-dark') {
+                  setTheme('theme-light');
+              } else {
+                  setTheme('theme-dark');
+              }
+          }
+  
+          // Immediately invoked function to set the theme on initial load
+          (function () {
+              if (localStorage.getItem('theme') === 'theme-dark') {
+                  setTheme('theme-dark');
+              } else {
+                  setTheme('theme-light');
+              }
+          })();
+        </script>
+    </div>    
+    <h1 class="animated fadeIn ProjectsHeading" >Projects</h1>    
+    <p class="animated fadeIn ProjectSub">Made with ❤️ while procastinating over homework.</p>
+<div class="projects">      
+
+    <div class = "projectContent">
+        
+        
+        <div class= "cardHolder">
+            <div class = "animated fadeIn delay-1s card cardshadow">
+                
+                    <h3 class = "cardTitle">Spaceline</h3>
+                    <p class="cardContent">Spaceline is a physics based universe simulator</p>
+                    <div class = "visit">Visit →</div>
+            </div>
+            <div class = "animated fadeIn delay-1s card cardshadow">
+                
+                <h3 class = "cardTitle">Spaceline</h3>
+                <p class="cardContent">Spaceline is a physics based universe simulator</p>
+                <div class = "visit">Visit →</div>
+        </div>
+        <div class = "animated fadeIn delay-1s card cardshadow">
+                
+            <h3 class = "cardTitle">Spaceline</h3>
+            <p class="cardContent">Spaceline is a physics based universe simulator</p>
+            <div class = "visit">Visit →</div>
+    </div>
+    <div class = "animated fadeIn delay-1s card cardshadow">
+                
+        <h3 class = "cardTitle">Spaceline</h3>
+        <p class="cardContent">Spaceline is a physics based universe simulator</p>
+        <div class = "visit">Visit →</div>
+</div>
+<div class = "animated fadeIn delay-1s card cardshadow">
+                
+    <h3 class = "cardTitle">Spaceline</h3>
+    <p class="cardContent">Spaceline is a physics based universe simulator</p>
+    <div class = "visit">Visit →</div>
+</div>
+<div class = "animated fadeIn delay-1s card cardshadow">
+                
+    <h3 class = "cardTitle">Spaceline</h3>
+    <p class="cardContent">Spaceline is a physics based universe simulator</p>
+    <div class = "visit">Visit →</div>
+</div>
+            
+        </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
