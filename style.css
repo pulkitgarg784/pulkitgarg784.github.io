@@ -28,12 +28,15 @@ a{
   --font-color:#3A3A3A;
   --font--sub--color:#707070;
   --card--color:rgb(243, 243, 243);
+  --link--hover:rgb(14, 14, 14);
+
 }
 .theme-dark {
   --color-bg:rgb(20, 20, 20);
   --font-color: #eeeeee;
   --font--sub--color: #eeeeee;
-  --card--color:rgb(17 ,17,17);
+  --card--color:rgb(5,5,5);
+  --link--hover:rgb(243, 243, 243);
 }
 .Intro{
 
@@ -82,12 +85,14 @@ a{
     font-size: 17px;
     font-weight: 200;
      font-size: 22px;
+     transition: transform .2s;
 
   }
   
   /* Change the color of links on hover */
   .topnav a:hover {
-      color: black;
+      color: var(--link--hover);
+      transform: scale(1.1);
   }
   
   /* Add a color to the active/current link */
@@ -144,8 +149,11 @@ a{
   margin-left: 5vh;
   font-size: 26px;
   outline: none;
+  transition: transform .2s;
 }  
-
+.switcher:hover{
+  transform: scale(1.2);
+}
 span {
   border-right: .05em solid;
   animation: caret 1s steps(1) infinite;
