@@ -19,6 +19,10 @@ body{
 
         
 }
+a{
+  text-decoration: none;
+  
+}
 .theme-light {
   --color-bg: #fafafa;
   --font-color:#3A3A3A;
@@ -194,7 +198,8 @@ span {
 
 }
 .cardlink{
-  text-decoration: none!important;
+  text-decoration: none;
+
 }
 .cardHolder{
   display: grid;
