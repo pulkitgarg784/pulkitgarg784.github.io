@@ -21,7 +21,7 @@ body{
 }
 a{
   text-decoration: none;
-  
+
 }
 .theme-light {
   --color-bg: #fafafa;
@@ -269,6 +269,7 @@ span {
   font-weight: 800;
   font-size: 1.1em;
   margin-bottom: 1em;
+  color: #2977f5;
 }
 
 
