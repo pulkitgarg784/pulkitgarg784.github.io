@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"charset='utf-8'>
+    <title>Pulkit Garg</title>
+    <link rel="stylesheet" type="text/css" href="project.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+
+    <script src="https://kit.fontawesome.com/c63635c2a4.js" crossorigin="anonymous"></script>
+    <script src = "Topnav.js"></script>
+
+
+
+</head>
+<body>
+  
+    <div class="animated fadeIn topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="Resume.pdf" download="Pulkit Garg's Resume">Resume</a>
+        <a href="#contact">Contact</a>
+        <a href="Projects.html">Projects</a>
+        <a href="index.html" class="active">Home</a>
+        <button class ="switcher" id="switch" onclick="toggleTheme()"><i class="far fa-moon"></i></button>
+        <script>
+          function setTheme(themeName) {
+              localStorage.setItem('theme', themeName);
+              document.documentElement.className = themeName;
+          }
+  
+          function toggleTheme() {
+              if (localStorage.getItem('theme') === 'theme-dark') {
+                  setTheme('theme-light');
+              } else {
+                  setTheme('theme-dark');
+              }
+          }
+  
+          (function () {
+              if (localStorage.getItem('theme') === 'theme-dark') {
+                  setTheme('theme-dark');
+              } else {
+                  setTheme('theme-light');
+              }
+          })();
+        </script>
+    </div>
+<div class = "content">
+<h1 id="h1-heading-8-">SpaceLine 🌌</h1>
+<h3 id="h2-heading">A educational physics-based space sandbox to allows you to construct a stunning star system by creating stars and planets.</h3>
+
+<hr>
+<h2 id="spaceline">SPACELINE</h2>
+<p>SpaceLine is a educational physics-based space sandbox which uses gravity, climate, and life simulations to allow the user to create their own virtual stars and planets. Which can then be customized to construct a stunning but fragile solar system.</p>
+<p>The interaction is not only limited to Stars and Planets, the user can also create moons and bianry stars systems using Spaceline</p>
+<img src="spaceline.png" class="imgHolder">
+<h3 id="background">Background:</h3>
+<p>Hi, I am Pulkit and being a 10th grade student, I felt that today’s education system has limited the hands on experiments to mere segments in the textbook and topics such as space exploration have to pushed to the fringes.</p>
+<p>SpaceLine allows everyone to marvel at their own star systems and creations. It also allows users to customize many aspects like size, mass, atmospheric composition of the planets and then predicts the presence of life and in case life cannot exist, informs the player what went wrong.</p>
+<h3 id="what-all-is-customizable">What all is customizable:</h3>
+<ul>
+<li>Star
+<ul>
+<li>Size</li>
+<li>Mass</li>
+<li>Temperature</li>
+<li>Color</li>
+</ul>
+</li>
+<li>Planets
+<ul>
+<li>Orbit</li>
+<li>Eccentricity</li>
+<li>Mass</li>
+<li>Size</li>
+<li>Atmospheric Composition</li>
+<li>Moons</li>
+</ul>
+</li>
+</ul>
+<h3 id="resources-used">Resources used:</h3>
+<ul>
+<li><a href="https://exoplanets.nasa.gov/what-is-an-exoplanet/how-do-we-find-habitable-planets/" class="link">For Prediction of Life.</a></li>
+<li><a href="https://exoplanets.nasa.gov/exoplanet-catalog/"class="link">Sample exoplanet database for data.</a></li>
+<li><a href="https://www.nasa.gov/mission_pages/kepler/overview/index.html"class="link">Transit Photometry Simulation.</a></li>
+</ul>
+<h3 id="built-with">Built With:</h3>
+<ul>
+<li>Unity Engine</li>
+<li>C#</li>
+<li>Blender</li>
+<li>Steam VR for VR Spectator Mode</li>
+</ul>
+<h2 id="try-it-out">Try It Out:</h2>
+<h3 id="httpspulkitgarg.itch.iospaceline----windows"><a href="https://pulkitgarg.itch.io/spaceline"class="link">https://pulkitgarg.itch.io/spaceline</a>  - Windows</h3>
+<p><strong>Controls:</strong></p>
+<ul>
+<li>
+<p>Mouse Scroll to zoom In/Out</p>
+</li>
+<li>
+<p>Left Click on Star to open Star settings. Right Click anywhere to close</p>
+</li>
+<li>
+<p>Press Tab to open/close planet creation menu, drag sliders to adjust value, enter data in input fields</p>
+<ul>
+<li>left click anywhere to spawn planet</li>
+</ul>
+</li>
+<li>
+<p>Hover on any planet to view stats</p>
+</li>
+<li>
+<p>Press V to toggle VR spectator mode ( Requires SteamVR compatible Headset)</p>
+</li>
+</ul>
+</section>
+</div>
+</body>
+</html>
