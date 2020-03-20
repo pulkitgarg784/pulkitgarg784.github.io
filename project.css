@@ -149,10 +149,10 @@ hr{
   .switcher:hover{
     transform: scale(1.2);
   }
-  video {
-    width: 70%;
+.videoPlayer{
+    width: 50%;
     height: auto;
-    margin-left: 10vw;
+
   }
   span {
     border-right: .05em solid;
