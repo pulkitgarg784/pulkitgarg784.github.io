@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"charset='utf-8'>
+    <title>Pulkit Garg</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+
+    <script src="https://kit.fontawesome.com/c63635c2a4.js" crossorigin="anonymous"></script>
+    <script src = "Topnav.js"></script>
+
+
+
+
+</head>
+<body>
+<div id="content">   
+    <div class="animated fadeIn delay-2s topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="Resume.pdf" download="Pulkit Garg's Resume">Resume</a>
+        <a href="#contact">Contact</a>
+        <a href="https://pulkitgarg.me/Projects">Projects</a>
+        <a href="https://pulkitgarg.me" class="active">Home</a>
+        <button class ="switcher" id="switch" onclick="toggleTheme()"><i class="far fa-moon"></i></button>
+      
+      <script>
+          function setTheme(themeName) {
+              localStorage.setItem('theme', themeName);
+              document.documentElement.className = themeName;
+          }
+  
+          function toggleTheme() {
+              if (localStorage.getItem('theme') === 'theme-dark') {
+                  setTheme('theme-light');
+              } else {
+                  setTheme('theme-dark');
+              }
+          }
+  
+          (function () {
+              if (localStorage.getItem('theme') === 'theme-dark') {
+                  setTheme('theme-dark');
+              } else {
+                  setTheme('theme-light');
+              }
+          })();
+      </script>
+    </div>    
+      
+    <div class = "introContent">
+        <h1 class="animated fadeIn Intro" >Meh.<br>Nothing Here</h1>    
+        <p class="animated fadeIn delay-1s SubHead">Maybe you got lost and stumbled across this page<br></p>
+        <a class = "visit animated fadeIn delay-1s" href="https://pulkitgarg.me/Projects">See some of the projects I worked on →</a>
+    </div>
+</div>
+<div class="animated fadeIn delay-2s socialdiv">
+    <a href="https://github.com/pulkitgarg784" class="social fab fa-github" target="_blank"></a>
+    <a href="https://www.artstation.com/pulkitgarg" class="social fab fa-artstation" target="_blank"></a>
+    <a href="https://pulkitgarg.itch.io/" class="social fab fa-itch-io" target="_blank"></a>    
+    <a href="https://virtualcreativity.xyz" class="social fas fa-globe" target="_blank"></a><br>
+    <p class="socialtext">&copy;2020 - Pulkit Garg</p>
+</div>
+</div>
+
+</body>
+</html>
