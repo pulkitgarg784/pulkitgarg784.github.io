@@ -1,0 +1,92 @@
+
+
+<!DOCTYPE html>
+<head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"charset='utf-8'>
+    <title>Pulkit Garg</title>
+    <link rel="stylesheet" type="text/css" href="project.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+
+    <script src="https://kit.fontawesome.com/c63635c2a4.js" crossorigin="anonymous"></script>
+    <script src = "Topnav.js"></script>
+
+
+
+</head>
+<body>
+  
+    <div class="animated fadeIn topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="Resume.pdf" download="Pulkit Garg's Resume">Resume</a>
+        <a href="#contact">Contact</a>
+        <a href="https://pulkitgarg.me/Projects">Projects</a>
+        <a href="https://pulkitgarg.me" class="active">Home</a>
+        <button class ="switcher" id="switch" onclick="toggleTheme()"><i class="far fa-moon"></i></button>
+        <script>
+          function setTheme(themeName) {
+              localStorage.setItem('theme', themeName);
+              document.documentElement.className = themeName;
+          }
+  
+          function toggleTheme() {
+              if (localStorage.getItem('theme') === 'theme-dark') {
+                  setTheme('theme-light');
+              } else {
+                  setTheme('theme-dark');
+              }
+          }
+  
+          (function () {
+              if (localStorage.getItem('theme') === 'theme-dark') {
+                  setTheme('theme-dark');
+              } else {
+                  setTheme('theme-light');
+              }
+          })();
+        </script>
+    </div>
+<div class = "content">
+    <h1 id="quriosity">Quriosity 🤔</h1>
+    <h3>Virtual Reality Application which allows the user to drive on the surface of the moon and mars, relive the Apollo 11 landings and do a flyby of the solar system.</h3>
+    <hr>
+    <h2>QURIOSITY</h2>
+    <p>You get to see various different moon landing sites over time, including but not limited to the Apollo moon landings. Another mode lets you explore various NASA missions and their history in a virtual museum, currently featuring the Apollo 15 moon landing.</p>
+    <h3 id="background">Background:</h2>
+    <p>The idea behind the game is to re-introduce space education into the lives of children who have written off anything related to physics in their lives, to spread my love for space exploration and innate curiosity for the unknown. Hence, Quriosity allows players to experience the surface of planets like never before, travel in a rover, and see famed landing sites, such as the Apollo 11 landing site, all whilst learning more about space exploration, than ever before. Simulated conversations with astronauts allows players to learn about the terrain, composition and history of the surface, as they explore it! With Quriosity, the goal is to make sure no child ever looks at the night sky the same way after having played Quriosity.</p>
+    <h3 id="included-experiences">Included Experiences:</h3>
+    <ul>
+    <li>Moon (landing/rover)</li>
+    <li>Mars</li>
+    <li>Apollo 11 landing</li>
+    <li>Solar system flyby</li>
+    </ul>
+    <h3 id="built-with">Built With:</h3>
+    <ul>
+    <li>Unity Engine</li>
+    <li>C#</li>
+    <li>Blender</li>
+    <li>Steam VR</li>
+    </ul>
+    <h2 id="try-it-out">Try It Out:</h2>
+    <a href="https://www.wearvr.com/apps/quriosity" class="link">https://www.wearvr.com/apps/quriosity</a>
+    <br><br><hr>
+    <h2 id="awards-won">Awards won:</h2>
+    <p class = "link">Nasa SpaceApps Regional Qualifiers 2nd Position</p>
+
+</section>
+
+</div>
+<div class="animated fadeIn delay-1s BottomSocialDiv">
+    <a href="https://github.com/pulkitgarg784" class="Bottomsocial fab fa-github" target="_blank"></a>
+    <a href="https://www.artstation.com/pulkitgarg" class="Bottomsocial fab fa-artstation" target="_blank"></a>
+    <a href="https://pulkitgarg.itch.io/" class="Bottomsocial fab fa-itch-io" target="_blank"></a>    
+    <a href="https://virtualcreativity.xyz" class="Bottomsocial fas fa-globe" target="_blank"></a><br>
+    <p class="socialtext">&copy;2020 - Pulkit Garg</p>
+</div>
+</div>
+
+</body>
+</html>
