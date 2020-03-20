@@ -149,6 +149,11 @@ hr{
   .switcher:hover{
     transform: scale(1.2);
   }
+  video {
+    width: 70%;
+    height: auto;
+    margin-left: 10vw;
+  }
   span {
     border-right: .05em solid;
     animation: caret 1s steps(1) infinite;
