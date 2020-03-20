@@ -120,9 +120,14 @@ hr{
     bottom: 0px;
     position: relative;
   }
-  .social:hover{
+  .Bottomsocial:hover{
     opacity: 100%;
     transform: scale(1.5);
+  }
+  .BottomSocialDiv{
+    margin: auto;
+    text-align: center;
+    width: 100%;
   }
   .socialtext{
     color: var(--font-color);

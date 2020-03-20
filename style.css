@@ -296,7 +296,7 @@ span {
   .Intro{margin-top: 10vh;}
 
 }
-@media (max-width :500px) {
+@media (max-width :700px) {
 .socialdiv{  margin-top: 10vh;
   bottom: 0px;position: relative;}
 }
