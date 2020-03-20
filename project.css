@@ -16,8 +16,9 @@ body{
         font-family: 'IBM Plex Sans', sans-serif;
         -webkit-font-smoothing: antialiased;
         text-decoration: none;
-        margin-left: 5vh;
+        
         color: var(--font--sub--color);
+        font-size: large;
         
         
 }
@@ -26,32 +27,30 @@ a{
 
 }
 h1{
-    font-size: 4em;
+    font-size: xx-large;
     color: var(--font-color);
 }
 h3{
     color: var(--font--sub--color);
+    font-size: larger;
 }
 hr{
     border: 0.5px solid var(--font--sub--color);
     opacity: .2;
     width: 100%;
 }
-p{
-    font-size: medium;
-  }
+
 .link{
     font-weight: 800;
-    font-size: 1.1em;
     margin-bottom: 1em;
     color: #2977f5;
+    
   }
 .imgHolder{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+
     max-width: 75vw;
-    padding: 20px;
+    margin: auto;
     ;
 }
 .theme-light {
@@ -103,7 +102,8 @@ p{
   }
 
   .content {
-      max-width: 80vw;
+      max-width: 80%;
+      margin: auto;
 }
 .Bottomsocial{
     margin-left: 15px;
@@ -117,7 +117,8 @@ p{
     opacity: 70%;
     transition: transform .2s;
     margin-top: 10vh;
-    bottom: 0px;position: relative;
+    bottom: 0px;
+    position: relative;
   }
   .social:hover{
     opacity: 100%;
@@ -135,7 +136,7 @@ p{
     border: none; 
     color: var(--font-color); 
     padding-top: 40px;
-   
+    padding-left: 5vw;
     font-size: 26px;
     outline: none;
     transition: transform .2s;
