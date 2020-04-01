@@ -1,0 +1,80 @@
+
+
+
+<!DOCTYPE html>
+<head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"charset='utf-8'>
+    <title>Pulkit Garg</title>
+    <link rel="stylesheet" type="text/css" href="project.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+
+    <script src="https://kit.fontawesome.com/c63635c2a4.js" crossorigin="anonymous"></script>
+    <script src = "Topnav.js"></script>
+
+
+
+</head>
+<body>
+  
+    <div class="animated fadeIn topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="Resume.pdf" download="Pulkit Garg's Resume">Resume</a>
+        <a href="#contact">Contact</a>
+        <a href="https://pulkitgarg.me/Projects">Projects</a>
+        <a href="https://pulkitgarg.me" class="active">Home</a>
+        <button class ="switcher" id="switch" onclick="toggleTheme()"><i class="far fa-moon"></i></button>
+        <script>
+          function setTheme(themeName) {
+              localStorage.setItem('theme', themeName);
+              document.documentElement.className = themeName;
+          }
+  
+          function toggleTheme() {
+              if (localStorage.getItem('theme') === 'theme-dark') {
+                  setTheme('theme-light');
+              } else {
+                  setTheme('theme-dark');
+              }
+          }
+  
+          (function () {
+              if (localStorage.getItem('theme') === 'theme-dark') {
+                  setTheme('theme-dark');
+              } else {
+                  setTheme('theme-light');
+              }
+          })();
+        </script>
+    </div>
+<div class = "content">
+    <h1>Out Numbered</h1>
+    <h3>Privacy Policy</h3>
+    <hr>
+
+    <p>Your privacy is important to us. It is pulkit's policy to respect your privacy regarding any information we may collect from you through our app, out numbered.</p>
+    <p>We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we’re collecting it and how it will be used.</p>
+    <p>We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we’ll protect within commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use or modification.</p>
+    <p>We don’t share any personally identifying information publicly or with third-parties, except when required to by law.</p>
+    <p>Our app may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites, and cannot accept responsibility or liability for their respective privacy policies.</p>
+    <p>You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you with some of your desired services.</p>
+    <p>Your continued use of our app will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, feel free to contact us.</p>
+    <p>This policy is effective as of 1 April 2020.</p>
+
+
+</section>
+
+</div>
+<div class="animated fadeIn delay-1s BottomSocialDiv">
+    <a href="https://github.com/pulkitgarg784" class="Bottomsocial fab fa-github" target="_blank"></a>
+    <a href="https://www.artstation.com/pulkitgarg" class="Bottomsocial fab fa-artstation" target="_blank"></a>
+    <a href="https://pulkitgarg.itch.io/" class="Bottomsocial fab fa-itch-io" target="_blank"></a>    
+    <a href="https://virtualcreativity.xyz" class="Bottomsocial fas fa-globe" target="_blank"></a><br>
+    <p class="socialtext">&copy;2020 - Pulkit Garg</p>
+</div>
+</div>
+
+</body>
+</html>

@@ -150,8 +150,9 @@ hr{
     transform: scale(1.2);
   }
 .videoPlayer{
-    width: 50%;
+    width: 80%;
     height: auto;
+    margin-left: 10vw;
 
   }
   span {

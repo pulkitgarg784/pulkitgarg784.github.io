@@ -1,0 +1,100 @@
+
+
+
+<!DOCTYPE html>
+<head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"charset='utf-8'>
+    <title>Pulkit Garg</title>
+    <link rel="stylesheet" type="text/css" href="project.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+
+    <script src="https://kit.fontawesome.com/c63635c2a4.js" crossorigin="anonymous"></script>
+    <script src = "Topnav.js"></script>
+
+
+
+</head>
+<body>
+  
+    <div class="animated fadeIn topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="Resume.pdf" download="Pulkit Garg's Resume">Resume</a>
+        <a href="#contact">Contact</a>
+        <a href="https://pulkitgarg.me/Projects">Projects</a>
+        <a href="https://pulkitgarg.me" class="active">Home</a>
+        <button class ="switcher" id="switch" onclick="toggleTheme()"><i class="far fa-moon"></i></button>
+        <script>
+          function setTheme(themeName) {
+              localStorage.setItem('theme', themeName);
+              document.documentElement.className = themeName;
+          }
+  
+          function toggleTheme() {
+              if (localStorage.getItem('theme') === 'theme-dark') {
+                  setTheme('theme-light');
+              } else {
+                  setTheme('theme-dark');
+              }
+          }
+  
+          (function () {
+              if (localStorage.getItem('theme') === 'theme-dark') {
+                  setTheme('theme-dark');
+              } else {
+                  setTheme('theme-light');
+              }
+          })();
+        </script>
+    </div>
+<div class = "content">
+    <h1 id="quriosity">C.S.A.D 👁️</h1>
+    <h3>Crowd sourced accident detection.</h3>
+    <hr>
+    <h2>CSAD</h2>
+    <p>Turns images and geolocation tags of accidents into valuable data which can then be used to save lives.
+    </p>
+    <h3 id="background">Background:</h2>
+    <p>More than 1.25 people are killed each year in traffic accidents. Out of these many are caused due to poor infrastructure or its mismanagement of road infrastructure. We provide a Crowd Sourced GPS locations of accidents are used to create a heatmap of accidents which can then be used by the government and civil agencies identify these locations and fix the problems.
+    </p>
+    <h3 id="background">Practicality:</h2>
+        <p>India is a country known for it’s corruption and poverty lurking in every corner, and this is why we believe a system like Nidhi which aims to make a fair, centralized system for all, while being in close connection with the democratic principles of our constitution canoe successful and widely adopted.
+            .
+        </p>
+    <h3 id="built-with">Built With:</h3>
+    <ul>
+    <li>PWA built with React</li>
+    <li>Python</li>
+    <li>Firebase realtime database</li>
+    </ul>
+    <h2 id="try-it-out">Demo:</h2>
+    <video controls class="videoPlayer">
+        <h3>Design:</h3>
+        <source src="nidhiDesign.mp4" type="video/mp4">
+
+      </video>
+      <h3>See it in action:</h3>
+      <video controls class="videoPlayer">
+        <source src="nidhiMain.mp4" type="video/mp4">
+
+      </video>
+    <br><br><hr>
+    <h2 id="awards-won">Awards won:</h2>
+    <h3 class = "link">Cyber Cup - Amity University 3rd Position</h3>
+
+</section>
+
+</div>
+<div class="animated fadeIn delay-1s BottomSocialDiv">
+    <a href="https://github.com/pulkitgarg784" class="Bottomsocial fab fa-github" target="_blank"></a>
+    <a href="https://www.artstation.com/pulkitgarg" class="Bottomsocial fab fa-artstation" target="_blank"></a>
+    <a href="https://pulkitgarg.itch.io/" class="Bottomsocial fab fa-itch-io" target="_blank"></a>    
+    <a href="https://virtualcreativity.xyz" class="Bottomsocial fas fa-globe" target="_blank"></a><br>
+    <p class="socialtext">&copy;2020 - Pulkit Garg</p>
+</div>
+</div>
+
+</body>
+</html>
