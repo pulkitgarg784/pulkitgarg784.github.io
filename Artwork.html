@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"charset='utf-8'>
+    <title>Pulkit Garg</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+
+    <script src="https://kit.fontawesome.com/c63635c2a4.js" crossorigin="anonymous"></script>
+    <script src = "Topnav.js"></script>
+
+
+
+
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.gallery{
+    margin-left:10vw;
+    margin-right:10vw;
+    margin-bottom:10vh;
+
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+  
+    <div class="animated fadeIn topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="Resume.pdf" download="Pulkit Garg's Resume">Resume</a>
+        <a href="https://pulkitgarg.me/Artwork">Artwork</a>
+        <a href="https://pulkitgarg.me/Projects">Projects</a>
+        <a href="https://pulkitgarg.me" class="active">Home</a>
+        <button class ="switcher" id="switch" onclick="toggleTheme()"><i class="far fa-moon"></i></button>
+        <script>
+          function setTheme(themeName) {
+              localStorage.setItem('theme', themeName);
+              document.documentElement.className = themeName;
+          }
+  
+          function toggleTheme() {
+              if (localStorage.getItem('theme') === 'theme-dark') {
+                  setTheme('theme-light');
+              } else {
+                  setTheme('theme-dark');
+              }
+          }
+  
+          (function () {
+              if (localStorage.getItem('theme') === 'theme-dark') {
+                  setTheme('theme-dark');
+              } else {
+                  setTheme('theme-light');
+              }
+          })();
+        </script>
+    </div>    
+    <h1 class="animated fadeIn ProjectsHeading" >Artwork</h1>    
+    <p class="animated fadeIn ProjectSub">Made with ❤️, Unreal Engine and Blender.</p>
+
+        
+<div class= "gallery">
+    <div class="row"> 
+          <div class="column">
+            <a href="https://www.artstation.com/artwork/rARn3G"><img src="https://cdnb.artstation.com/p/assets/images/images/027/939/823/large/pulkit-garg-room.jpg?1593014716" style="width:100%">
+            <a href="https://www.artstation.com/artwork/k4vyZx"><img src="https://cdna.artstation.com/p/assets/images/images/024/315/044/large/pulkit-garg-vlcsnap-2020-02-18-16h11m29s444.jpg?1582023343" style="width:100%">
+            <a href="https://www.artstation.com/artwork/oOED9w"><img src="https://cdnb.artstation.com/p/assets/images/images/024/314/939/large/pulkit-garg-vlcsnap-2020-02-18-16h10m40s039.jpg?1582022829" style="width:100%">
+            </div>
+
+          <div class="column">
+            <a href="https://www.artstation.com/artwork/baywbn"><img src="https://cdna.artstation.com/p/assets/images/images/024/280/174/large/pulkit-garg-japan.jpg?1581914398" style="width:100%">
+            <a href="https://www.artstation.com/artwork/2xmZEx"><img src="https://cdna.artstation.com/p/assets/images/images/023/525/052/large/pulkit-garg-highresscreenshot00001.jpg?1579505421" style="width:100%">
+            <a href="https://www.artstation.com/artwork/oOED9w"><img src="https://cdnb.artstation.com/p/assets/images/images/024/314/941/large/pulkit-garg-vlcsnap-2020-02-18-16h10m49s823.jpg?1582022836" style="width:100%">
+            <a href="https://www.artstation.com/artwork/2xmZEx"><img src="https://cdnb.artstation.com/p/assets/images/images/023/525/055/large/pulkit-garg-highresscreenshot00003.jpg?1579505425" style="width:100%">
+        </div>       
+    </div>
+</div>
+
+</div>
+    <div class="animated fadeIn delay-1s Bottomsocial">
+    <a href="https://github.com/pulkitgarg784" class="social fab fa-github" target="_blank"></a>
+    <a href="https://www.artstation.com/pulkitgarg" class="social fab fa-artstation" target="_blank"></a>
+    <a href="https://pulkitgarg.itch.io/" class="social fab fa-itch-io" target="_blank"></a>    
+    <a href="https://virtualcreativity.xyz" class="social fas fa-globe" target="_blank"></a><br>
+    <p class="socialtext">&copy;2020 - Pulkit Garg</p>
+    </div>
+</div>
+
+
+
+</body>
+</html>
