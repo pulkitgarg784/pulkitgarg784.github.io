@@ -48,7 +48,7 @@ hr {
   margin: auto;
 }
 .theme-light {
-  --color-bg: #fafafa;
+  --color-bg: #f9f9f9;
   --font-color: rgb(20, 20, 20);
   --font--sub--color: #3a3a3a;
   --card--color: rgb(240, 240, 240);
